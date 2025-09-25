@@ -12,7 +12,8 @@ model User {
   name      String
   email     String   @unique
   password  String
-  cpf       String
+  cpf       String   @unique
   apelido   String
   createdAt DateTime @default(now())
 }
+
